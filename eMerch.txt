@@ -1,0 +1,57 @@
+Your company’s mission statement or goal.
+
+Images of popular products/services.
+
+A link to your ‘About Us’ section.
+
+An option for users to sign up and learn more about the business.
+
+Details of any promotional offers.
+
+Plenty of CTAs to encourage customers to make a purchase.
+
+FOOTER:
+contact-us
+location
+social media
+
+DATABASE
+------------------------
+user-account:
+    user-id
+    firstname
+    lastname
+    age
+    password
+    contact-number
+    address
+
+--------------------
+clothes:
+    id
+    image
+    title
+    price
+    variety *
+    color
+    size
+    quantity
+    shipping
+    specifications*
+    product description
+
+-------------------
+stocks:
+    id
+    cloth-id
+    count
+
+-------------------
+purchase-log:
+    cloth-id
+    user-id
+    timepurchase
+-------------------
+cart:
+    cloth-id
+    user-id

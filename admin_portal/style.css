@@ -1,0 +1,393 @@
+body {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1vh;
+  background-color: #E8E5E5;
+}
+
+.top__left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.top__left--profile i {
+  font-size: 60px;
+  color: white;
+  background-color: #b90000;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.top__right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.top__right--search {
+  height: 32px;
+  background-color: #ececec;
+  width: 150px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #b90000;
+}
+
+.top__right--search i {
+  font-size: 35px;
+  color: #b90000;
+  cursor: pointer;
+}
+
+.top__right--search input {
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding-left: 10px;
+  background-color: #eceaea;
+}
+
+.top__right--add button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 40px;
+  background-color: #b90000;
+  color: #eceaea;
+  border-radius: 25px;
+  border: 1px solid white;
+  font-size: 15px;
+}
+
+.top__right--add i {
+  font-size: 30px;
+}
+
+.top__right--add button:hover {
+  background-color: rgba(185, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.down {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 80vh;
+}
+
+.down__left-nav {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #E8E5E5;
+  height: 80vh;
+}
+
+.down__left-nav--products, .down__left-nav--sells {
+  border: none;
+  height: 30px;
+  background-color: #b90000;
+  color: #e2dede;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.down__right-controller {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  background-color: #f7f5f5;
+}
+
+.down__right-controller--title {
+  width: 80%;
+}
+
+.down__right-controller--title input {
+  width: 100%;
+  height: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+.down__right-controller--edit {
+  width: 10%;
+  border: 1px solid green;
+  height: 25px;
+}
+
+.down__right-controller--edit input {
+  width: 100%;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+}
+
+.down__right-controller--edit input:hover {
+  background-color: green;
+  color: white;
+}
+
+.down__right-controller--delete {
+  width: 10%;
+  height: 25px;
+  border: 1px solid red;
+}
+
+.down__right-controller--delete input {
+  width: 100%;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+}
+
+.down__right-controller--delete input:hover {
+  background-color: #b90000;
+  color: #eceaea;
+}
+
+.down__add-window {
+  margin: 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  background-color: rgba(233, 229, 229, 0.8);
+  left: -100%;
+  -webkit-animation: slide-right 0.5s ease forwards;
+          animation: slide-right 0.5s ease forwards;
+  overflow: auto;
+}
+
+.down__add-window--minimize-exit {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: rgba(226, 222, 222, 0.8);
+}
+
+.down__add-window--minimize-exit #minimize {
+  width: 35px;
+  font-size: 30px;
+  color: green;
+}
+
+.down__add-window--minimize-exit #minimize:hover {
+  background-color: green;
+  color: #f0ecec;
+}
+
+.down__add-window--minimize-exit #exit {
+  color: #b90000;
+  width: 35px;
+  font-size: 30px;
+}
+
+.down__add-window--minimize-exit #exit:hover {
+  background-color: #b90000;
+  color: white;
+}
+
+.down__add-window--form-div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.down__add-window--form-div .form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0px;
+  width: 500px;
+}
+
+.down__add-window--form-div .form div label {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 15px;
+  color: rgba(36, 36, 36, 0.8);
+  font-weight: bold;
+}
+
+.down__add-window--form-div .form .image {
+  background-color: rgba(226, 222, 222, 0.8);
+  height: 100px;
+  padding: 10px;
+}
+
+.down__add-window--form-div .form .title input, .down__add-window--form-div .form .variety input, .down__add-window--form-div .form .color input, .down__add-window--form-div .form .quantity input, .down__add-window--form-div .form .shipping input {
+  height: 25px;
+  outline: none;
+  border: 1px solid rgba(253, 163, 141, 0.5);
+  padding: 5px;
+}
+
+.down__add-window--form-div .form .size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.down__add-window--form-div .form .specs, .down__add-window--form-div .form .descript {
+  outline: none;
+}
+
+.down__add-window--form-div .form .specs textarea, .down__add-window--form-div .form .descript textarea {
+  border: 1px solid rgba(170, 228, 255, 0.5);
+  height: 70px;
+  padding: 5px;
+}
+
+.down__add-window--form-div .form button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgba(185, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.down__add-window--form-div .form .reset:hover {
+  background-color: rgba(253, 163, 141, 0.5);
+}
+
+.down__add-window--form-div .form .submit:hover {
+  background-color: rgba(185, 0, 0, 0.5);
+}
+
+.down .pop-up {
+  -webkit-animation: slide-left 0.2s ease forwards;
+          animation: slide-left 0.2s ease forwards;
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    left: -110%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    left: -110%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -110%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -110%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

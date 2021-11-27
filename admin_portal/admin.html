@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- boxicons font -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Roboto Google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <title>upload</title>
+</head>
+<body>
+    <div class="top">
+        <div class="top__left">
+            <div class="top__left--profile">
+                <i class='bx bxs-user-detail' ></i>
+            </div>
+            <div class="top__left--logo">
+                <h1>cMerch</h1>
+            </div>
+        </div>
+
+        <div class="top__right">
+            <div class="top__right--search">
+                <i class='bx bx-search-alt' ></i>
+                <input type="text" name="search" id="search" placeholder="item">
+            </div>
+            <div class="top__right--add">
+                <button type="submit"class="add"><i class='bx bx-right-arrow-alt' ></i>Add</button>
+                <!-- <input type="button" value="Add" class="add"> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="down">
+        <div class="down__left-nav">
+            <button class="down__left-nav--products">Products</button>
+            <button class="down__left-nav--sells">Sells</button>
+        </div>
+        <div class="down__right-controller">
+            <div class="down__right-controller--title"><input type="button" value="Title"></div>
+            <div class="down__right-controller--edit"><input type="button" value="Edit"></div>
+            <div class="down__right-controller--delete"><input type="button" value="Delete"></div>
+            <!-- <div class="down__right-controller--view"><input type="button" value="View"></div> -->
+        </div>
+
+        <div class="down__add-window pop-up">
+            <div class="down__add-window--minimize-exit">
+                <i class='bx bx-left-arrow-alt' id="minimize"></i>
+                <i class='bx bx-x' id="exit"></i>
+            </div>
+            <div class="down__add-window--form-div">
+                <!-- ---------------------------------------- -->
+                <form action="/admin" method="post" class="form">
+                    <div class="image">
+                        <label for="image">Upload Image</label>
+                        <input type="file" name="img" id="img">
+                    </div>
+ 
+                    <div class="title">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    
+                    <div class="variety">
+                        <label for="variety">Variety</label>
+                        <input type="text" name="variety" id="variety">
+                    </div>
+                    
+                    <div class="color">
+                        <label for="color">Color</label>
+                        <input type="text" name="color" id="color" value="option">    
+                    </div>
+                    
+                    <div class="size">
+                        <label for="size">Size</label>
+                        <select name="sizes" id="">
+                            <option value="">size</option>
+                            <option value="0">XS</option>
+                            <option value="1">S</option>
+                            <option value="2">M</option>
+                            <option value="3">L</option>
+                            <option value="4">XL</option>
+                            <option value="5">XXL</option>
+                            <option value="5">XXXL</option>
+
+                        </select>
+
+                        <select name="width" id="">
+                            <option value="0">width</option>
+                            <option value="1">18</option>
+                            <option value="2">20</option>
+                            <option value="3">22</option>
+                            <option value="4">24</option>
+                            <option value="5">26</option>
+                            <option value="5">28</option>
+                        </select>
+
+                        <select name="length" id="">
+                            <option value="0">length</option>
+                            <option value="1">28</option>
+                            <option value="2">29</option>
+                            <option value="3">30</option>
+                            <option value="4">31</option>
+                            <option value="5">32</option>
+                            <option value="5">33</option>
+                        </select>
+                        
+                    </div>
+                    <div class="quantity">
+                        <label for="quantity">Quantity</label>
+                        <input type="text" name="quantity" id="quantity">
+                    </div>
+                    <div class="shipping">
+                        <div class="shipping"></div>
+                        <label for="shipping">Shipping Info</label>
+                        <input type="text" name="shipping" id="shipping">
+                    </div>
+                    <div class="specs">
+                        <label for="Specifications">Specifications</label>
+                        <textarea name="specs" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="descript">
+                        <label for="product-description">Product Description</label>
+                        <textarea name="descript" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <button type="reset" class="reset"> reset</button>
+                    <button type="submit" class="submit">submit</button>
+                </form>
+                <!-- --------------------------------------------------------- -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/admin.js"></script>
+</body>
+</html>

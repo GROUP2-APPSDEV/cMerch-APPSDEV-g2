@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cMerch - Home</title>
+    <link rel="stylesheet" href="/css/products/products.css">
+    <!-- Roboto Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- boxicons font -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- hamburger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="user">
+        <div class="user__cart"><a href="#"><i class='bx bx-cart'></i></a></div>
+        <div class="user__account">
+            <div class="user__account--name">
+            <p>User Name</p>
+            </div>
+            <i class='bx bx-user' class='user_icon'></i>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <p>eMerch</p>
+        </div>
+        <!-- <div class="navbar__navigation"> -->
+            <ul class="nav-links hide_nav">
+                <li ><a href="/" >Home</a></li>
+                <li ><a href="/products"class="active">Products</a></li>
+                <li><a href="/contact-us">ContactUs</a></li>
+                <li><a href="/about-us">AboutUs</a></li>
+            </ul>
+            
+            <div class="burger ">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="burgerX ">
+                <i class='bx bx-x' ></i>
+            </div>
+        <!-- </div> -->
+    </nav>
+
+    <div class="create_account"></div>
+    <footer class="footer">
+        <div class="footer__location">
+            <h4>Location</h4>
+            <p>Pandi, Bulacan, Philippines</p>
+        </div>
+        <div class="footer__Contact-us">
+            <h6>Contact Us</h6>
+            <form action="#" method="post">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+        
+        <div class="footer__follow-us">
+            <h6>Follow Us</h6>
+            <div class="follow-us__socialmedia">
+                <i class='bx bxl-facebook-circle' > Facebook</i>
+                <i class='bx bxl-twitter' > Twitter</i>
+                <i class='bx bxl-youtube' > Youtube</i>
+            </div>
+        </div>
+        
+        
+    </footer>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
