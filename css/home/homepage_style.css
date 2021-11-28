@@ -321,6 +321,20 @@ body {
   background-color: rgba(185, 0, 0, 0.7);
 }
 
+.create_account__form form .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.create_account__form form .address label {
+  font-size: 12px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

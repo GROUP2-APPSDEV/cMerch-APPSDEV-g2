@@ -1,7 +1,7 @@
 CREATE TABLE `USER`(
 	ID int PRIMARY KEY ,
     `First Name` varchar(50),
-    `Last Name` varchar(50),
+    `Middle Name` varchar(50),
     `Last Name` varchar(50),
     `Prefix` varchar(50),
     `Age` int(20),
@@ -18,5 +18,6 @@ SHOW databases;
 USE `u991157589_appsdev2021_g2`;
 
 SHOW tables;
+SHOW COLUMNS FROM `USER`;
 
-DROP TABLE clothes;
+SELECT * FROM USER;

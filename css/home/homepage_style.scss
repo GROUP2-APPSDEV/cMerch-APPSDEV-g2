@@ -212,6 +212,13 @@ body{
         button:hover{
             background-color: rgba(185,0,0,0.7);
         }
+        .address{
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 12px;
+            }
+        }
     }
 }
 // FOOOOOOOOOOOTERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR

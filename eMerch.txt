@@ -55,3 +55,7 @@ purchase-log:
 cart:
     cloth-id
     user-id
+Hostname	sql485.main-hosting.eu
+Database	u991157589_appsdev2021_g2
+User	u991157589_appsdev2021_g2
+Password	Group2q2w
