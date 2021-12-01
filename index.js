@@ -13,12 +13,13 @@ import mysql from 'mysql';
 const app = express();
 // parse json
 app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 // database 
 app.use(db_router);
 // stocks api
-app.use(stock_router)
+app.use(stock_router);
 // user api
-app.use(user_router)
+app.use(user_router);
 // routes - middleware ------------------
 app.use(express.static(path.join(__dirname, '.')));
 app.use(express.static(path.join(__dirname, './admin_portal')));
@@ -27,4 +28,4 @@ app.use(router);
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{
     console.log('listening..');
-})
+});

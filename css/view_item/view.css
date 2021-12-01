@@ -46,16 +46,9 @@ body {
   margin-right: 30px;
 }
 
-.user__account button {
-  cursor: pointer;
-  background-color: white;
-  border: none;
+.user__account p {
   font-weight: 800;
   color: black;
-}
-
-.user__account button:hover {
-  color: #b90000;
 }
 
 .user__account p:hover {
@@ -148,89 +141,7 @@ body {
   display: none;
 }
 
-.homepage_greeting {
-  background-image: url("https://res.cloudinary.com/dy1od3qwx/image/upload/v1637715125/school_project/appsdev_final_ex/image/il_fullxfull.3331567762_j4bu_z1l8my.jpg");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 60vw auto;
-  height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-}
-
-.homepage_greeting__sales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  row-gap: -100px;
-}
-
-.homepage_greeting__sales p {
-  background-color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-  letter-spacing: 5px;
-  font-size: clamp(2rem, 5vw, 4rem);
-  color: #b90000;
-  margin: 10px 10px;
-}
-
-.homepage_greeting__sales h4 {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
-}
-
-.homepage_greeting__sales button {
-  width: clamp(10rem, 7vw, 4rem);
-  height: clamp(3rem, 7vw, 3rem);
-  font-size: 15px;
-  font-weight: bold;
-  border: none;
-  border-radius: 7px;
-  background-color: #b90000;
-  color: #eeeeee;
-  cursor: pointer;
-}
-
-.homepage_greeting__sales button:hover {
-  background-color: rgba(185, 0, 0, 0.7);
-}
-
-.seasonal_products, .regular_products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F2EFEF;
-  margin: 5px 0px;
-}
-
-.seasonal_products__samples, .regular_products__samples {
+.view {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,105 +152,36 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
 }
 
-.seasonal_products__samples div img, .regular_products__samples div img {
-  width: 100px;
-  height: 100px;
-  margin: 0px 10px;
-  border: 2px solid #e0dcdc;
-  cursor: pointer;
+.view__image {
+  width: 40%;
+  height: 100%;
+  outline: 1px solid black;
 }
 
-.seasonal_products button, .regular_products button {
-  width: 10rem;
-  height: 2rem;
-  font-size: 12px;
-  margin: 10px;
-  font-weight: bold;
-  border: none;
-  border-radius: 7px;
-  background-color: #b90000;
-  color: #eeeeee;
-  cursor: pointer;
+.view__image img {
+  width: 100%;
 }
 
-.seasonal_products button:hover, .regular_products button:hover {
-  background-color: rgba(185, 0, 0, 0.7);
+.view__info {
+  width: 60%;
+  margin: 0 10px;
 }
 
-.create_account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F2EFEF;
+.view__info .title {
+  letter-spacing: 2px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
 }
 
-.create_account__form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 300px;
-}
-
-.create_account__form form label {
+.view__info .price {
   font-size: 15px;
-  font-weight: bold;
-}
-
-.create_account__form form input {
-  outline: none;
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 25px;
-}
-
-.create_account__form form button {
-  width: 10rem;
-  height: 2rem;
-  font-size: 12px;
-  margin: 10px;
-  font-weight: bold;
-  border: none;
-  border-radius: 7px;
-  background-color: #b90000;
-  color: #eeeeee;
-  cursor: pointer;
-}
-
-.create_account__form form button:hover {
-  background-color: rgba(185, 0, 0, 0.7);
-}
-
-.create_account__form form .address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.create_account__form form .address label {
-  font-size: 12px;
+  color: #b90000;
 }
 
 .footer {
@@ -353,7 +195,7 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  background-color: #d8d6d6;
+  background-color: #f2efef;
 }
 
 .footer div {
@@ -434,25 +276,5 @@ body {
     margin-right: 30px;
     background-color: #fcfcfc;
   }
-  .homepage_greeting {
-    height: 50vh;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-position: center;
-  }
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .regular_products__samples div img, .seasonal_products__samples div img {
-    width: 60px;
-    height: 50px;
-  }
 }
-/*# sourceMappingURL=homepage_style.css.map */
+/*# sourceMappingURL=view.css.map */

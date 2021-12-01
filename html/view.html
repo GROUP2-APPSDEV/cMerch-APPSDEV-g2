@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cMerch - Home</title>
-    <link rel="stylesheet" href="/css/products/products.css">
+    <link rel="stylesheet" href="/css/view_item/view.css">
     <!-- Roboto Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- boxicons font -->
@@ -27,14 +27,10 @@
         <div class="navbar__logo">
             <p>eMerch</p>
         </div>
-        <div class="navbar__search_item">
-            <i class='bx bx-search'></i>
-            <input type="text" name="search" id="">
-        </div>
         <!-- <div class="navbar__navigation"> -->
             <ul class="nav-links hide_nav">
                 <li ><a href="/" >Home</a></li>
-                <li ><a href="/products"class="active">Products</a></li>
+                <li ><a href="/products">Products</a></li>
                 <li><a href="/contact-us">ContactUs</a></li>
                 <li><a href="/about-us">AboutUs</a></li>
             </ul>
@@ -49,42 +45,28 @@
             </div>
         <!-- </div> -->
     </nav>
-
-    <div class="main">
-        <div class="main__header">
-            <p>Products</p>
-        <div class="select">
-            <select name="SORT BY" id="sort">
-                <option value="alph">Alphabitically, A to Z</option>
-                <option value="seasonal">Seasonal</option>
-                <option value="trends">Trends</option>
-            </select>
+  
+    <div class="view">
+        <div class="view__image">
+            <img src="https://res.cloudinary.com/dy1od3qwx/image/upload/v1638177369/school_project/appsdev_final_ex/image/cousin-crew_aqx6jo.jpg" alt="image" srcset="">
         </div>
-            
-        </div>
-        <div class="main__products">
-            <div class="main__products--item">
-                <div class="image">
-                    <img src="https://res.cloudinary.com/dy1od3qwx/image/upload/v1638177369/school_project/appsdev_final_ex/image/cousin-crew_aqx6jo.jpg" alt="title" srcset="">
-                </div>
-                
-                <h4>title title title title title title title</h4>
-                <p>₱ 999.99</p>
-                <div class="view view_show">
-                    <input class="Vbtn view_btn" type="button" value="VIEW">
-                </div>
+        <div class="view__info">
+            <p class="title">Title..............</p>
+            <p class="price">Pricesssss</p>
+            <p class="variety">variety</p>
+            <p class="color">color</p>
+            <p class="size">sizeeeee</p>
+            <p class="shipping">shipping</p>
+            <div class="btn">
+                <button>Add to Cart</button>
+                <button>Buy</button>
             </div>
-            <!-- example -->
-            <div class="main__products--item">
-                <div class="image">
-                    <img src="https://res.cloudinary.com/dy1od3qwx/image/upload/v1638177369/school_project/appsdev_final_ex/image/cousin-crew_aqx6jo.jpg" alt="title" srcset="">
-                </div>
-                
-                <h4>title title title title title title title</h4>
-                <p>₱ 999.99</p>
-            </div>
-        </div>
 
+        </div>
+    </div>
+    <div class="specs">
+        <p class="specs">specs</p>
+        <p class="description">description</p>
     </div>
     <footer class="footer">
         <div class="footer__location">
@@ -111,6 +93,6 @@
         
         
     </footer>
-    <script src="/javascript/products.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>

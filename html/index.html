@@ -21,7 +21,7 @@
         <div class="user__cart"><a href="#"><i class='bx bx-cart'></i></a></div>
         <div class="user__account">
             <div class="user__account--name">
-            <p>User Name</p>
+            <button class="userBtn">Log In</button>
             </div>
             <i class='bx bx-user' class='user_icon'></i>
         </div>
@@ -103,7 +103,7 @@
     <div class="create_account">
         <h4>Create an Account</h4>
         <div class="create_account__form">
-            <form action="/products" method="post">
+            <form action="/api/user-added" method="POST" enctype="application/x-www-form-urlencoded">
                 <label for="firstname">First Name:</label>
                 <input type="text" name="firstname" id="firstname">
 
@@ -122,11 +122,17 @@
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age">
 
                 <label for="contact">Contact Number:</label>
-                <input type="contact" name="contact" id="contact">
+                <input type="text" name="contact" id="contact">
+
+                <label for="gmail">Gmail: </label>
+                <input type="text" name="gmail" id="gmail">
+
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password">
 
                 <div class="address">
                     <h5>Address:</h5>
